@@ -2,8 +2,6 @@ local DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1441942579145867384/Ns
 local HttpService = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
-
--- ===== FISH THUMBNAIL URLs ===== (ISI SENDIRI NANTI)
 local FISH_THUMBNAILS = {
     ["Abyshorn Fish"] = "https://tr.rbxcdn.com/180DAY-069836ae8379c1ff785af3f3da69d5b6/420/420/Image/Png/noFilter",
     ["Abyss Seahorse"] = "https://tr.rbxcdn.com/180DAY-c89ed00ff0c4102d0ea990e7f6c28f29/420/420/Image/Png/noFilter",
@@ -306,7 +304,7 @@ local TIER_COLORS = {
 
 local TIER_EMOJI = {
     [6] = "🔴",
-    [7] = "🟦"
+    [7] = "🟣"
 }
 
 local MUTATION_PREFIXES = {
@@ -722,7 +720,7 @@ startMonitor()
 task.wait(1)
 sendWebhook(
     "✅ Fish IT Logger Started",
-    "**v11.0 - Mythic & Secret Only!**\n🚀 Event-driven, no loops\n✨ Smart mutation detection\n🔴 Mythic • 🟦 SECRET",
+    "**v11.0 - Mythic & Secret Only!**\n🚀 Event-driven, no loops\n✨ Smart mutation detection\n🔴 Mythic • 🟣 SECRET",
     {
         {name = "📊 Database", value = tostring(loadedCount) .. " Mythic+ fish", inline = true},
         {name = "🎯 Filter", value = "Tier 6-7 Only", inline = true},
